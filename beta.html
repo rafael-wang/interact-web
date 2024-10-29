@@ -1,131 +1,486 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta charset="utf-8" />
-    <title>tech.net - Login</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <!-- Include Lato font from Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<!doctype html>
+<html lang="en" class="no-js">
+<head><script async src="https://www.googletagmanager.com/gtag/js?id=G-49T9M12F86"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    <link rel="stylesheet" href="/w3.css" />
-    <link rel="stylesheet" href="/shs-fonts.css" />    
-    <link rel="stylesheet" href="/shs-fa.css" />
-    <link rel="stylesheet" href="/shs-login.css" />
-
-    <!-- Custom CSS for styling -->
-    <style>
-        /* Apply Lato font to the body and other elements */
-        body {
-            font-family: 'Lato', sans-serif; /* Set Lato font for body */
-            background-image: url('https://sydneytech-h.sentral.com.au/_common/lib/login_background?id=custom_sths_2.jpg'); /* Set background image */
-            background-size: cover; /* Cover the entire screen */
-            background-position: center; /* Center the image */
-            background-repeat: no-repeat; /* Prevent image from repeating */
-            height: 100vh; /* Ensure body covers the full height of the viewport */
-            margin: 0; /* Remove default margin */
-        }
-
-        #shs-login-title {
-            font-family: 'Lato', sans-serif; /* Set Lato font for Portal Log In title */
-            font-weight: 900; /* Set to Lato bold weight */
-        }
-
-        .error-message {
-            background-color: #e74c3c; /* Red background */
-            color: white; /* White text */
-            padding: 16px;
-            border-radius: 5px;
-            font-weight: normal;
-            margin-top: 10px;
-        }
-        .error-message p {
-            margin: 0;
-            font-size: 1rem;
-        }
-        .error-message p:first-child {
-            font-size: 1.45rem;
-            font-weight: 900; /* Use Lato bold for this line */
-        }
-    </style>
+  gtag('config', 'G-49T9M12F86');
+</script>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P2NKBBJZ');</script>
+  
+  <title>tech.interact</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://designsystem.digital.nsw.gov.au/nsw-og-image.jpg">
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="https://designsystem.digital.nsw.gov.au/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone" rel="stylesheet">
+  <link rel="stylesheet" href="https://designsystem.digital.nsw.gov.au/docs/css/docs.css">
+  <!-- Hotjar Tracking Code for NSW Design System -->
+  <script>
+      (function(h,o,t,j,a,r){
+          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+          h._hjSettings={hjid:5063548,hjsv:6};
+          a=o.getElementsByTagName('head')[0];
+          r=o.createElement('script');r.async=1;
+          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+          a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
 </head>
-<body>
 
-    <!-- header -->
-    <div class="w3-top" id="shs-foot">
-        <div class="w3-row w3-black">
-            <div class="w3-buttons">
-                <a href="http://www.sydneyboyshigh.com" class="w3-bar-item w3-button w3-right "><i class="fa fa-home"></i></a>
-                <a href="http://www.sydneyboyshigh.com/login-instructions" class="w3-bar-item w3-button w3-right "><i class="fa fa-question-circle"></i></a>
-            </div>
-            <div class="shs-logo-foot">
-                <p class="shs-foot-text">Sydney Technical High School</p>
-            </div>
+<body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P2NKBBJZ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+
+  <nav class="nsw-skip" aria-label="Skip to links">
+    <a href="#main-nav"><span>Skip to navigation</span></a>
+    <a href="#"><span>Skip to content</span></a>
+  </nav>
+  <div class="nsw-masthead">
+    <div class="nsw-container">Sydney Technical High School - Interact</div>
+  </div>
+<header class="nsw-header">
+  <div class="nsw-header__container">
+    <div class="nsw-header__inner">
+      <div class="nsw-header__main">
+        <div class="nsw-header__waratah">
+          <a href="https://designsystem.digital.nsw.gov.au/">
+            <a href="https://sydneytech-h.schools.nsw.gov.au/">
+                <img src="https://sydneytech-h.schools.nsw.gov.au/content/dam/doe/sws/schools/s/sydneytech-h/image/images/sths-logo.png" 
+                     alt="NSW Government" class="nsw-header__logo" style="width: 130px; height: auto;">
+              </a>
+            <span class="sr-only">Sydney Technical High School - Interact</span>
+          </a>
+<!-- Component - Local Header fragment starts here-->
+<header class="local-header uk-hidden-small">
+    <div class="uk-width-xlarge-1-1">
+      <div class="uk-container uk-container-center">
+  
+        <div class="local-header-name uk-width-8-10">
+          <h1 class="local-header-heading">Sydney Technical High School</h1> <p          
+          <div class="local-header-contact">
+            <p class="local-header-contact-info-phone">
+              <span aria-hidden="true"></span><span class="show-on-sr"><strong>Telephone - </strong></span>02 8566 2600
+            <p class="local-header-contact-info">
+              <span aria-hidden="true"></span><span class="show-on-sr"><strong>Email - </strong></span><a href="mailto:sydneytech-h.school@det.nsw.edu.au"> sydneytech-h.school@det.nsw.edu.au
+          </div>
+          
         </div>
+      </div>
+    </div>
+  </header>
+  <!-- Component - Local Header fragment ends here-->
+      </div>
+      <div class="nsw-header__menu">
+        <button type="button" class="js-open-nav" aria-expanded="false" aria-controls="main-nav">
+          <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">menu</span>
+          <span><span class="sr-only">Open</span> Menu</span>
+        </button>
+      </div>
+
+        </button>
+      </div>
     </div>
 
-    <!-- login container -->
-    <div id="shs-login-container">
-        <div class="w3-container" id="shs-login">
-            <div class="w3-card-4">
-                <!-- login header -->
-                <header class="w3-container">
-                    <h2 id="shs-login-title">Portal Log In</h2>              
-                </header>
 
-                <!-- login content -->
-                <div class="w3-container">
-                    <p id="shs-login-instruction">Log in with your tech.net account &mdash;</p>
-                    <div id="shs-login-message"></div> <!-- Error message will appear here -->
+  </div>
+</header>
+<nav class="nsw-main-nav js-mega-menu" id="main-nav" aria-label="Main menu">
+  <div class="nsw-main-nav__header">
+    <div class="nsw-main-nav__title">Menu</div>
+    <button class="nsw-icon-button js-close-nav" type="button" aria-expanded="true">
+      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">close</span>
+      <span class="sr-only">Close Menu</span>
+    </button>
+  </div>
+  <ul class="nsw-main-nav__list">
+    <li>
+      <a href="https://designsystem.digital.nsw.gov.au/index.html#about-dpc">
+        <span>About DPC</span>
+        <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_right</span>
+      </a>
 
-                    <!-- Login form -->
-                    <form id="shs-login-form">
-                        <section id="fld-username" class="shs-field w3-section">
-                            <input class="w3-input" type="text" placeholder="Username" name="username" id="fld-username-fld" autofocus="autofocus" />
-                            <span class="bar"></span>
-                        </section>
+      <div class="nsw-main-nav__sub-nav" id="sub-nav-914d7e2" role="region" aria-label="About DPC Submenu">
+        <div class="nsw-main-nav__header">
+          <button class="nsw-icon-button nsw-icon-button--flex js-close-sub-nav" type="button" aria-expanded="true" aria-controls="sub-nav-914d7e2">
+            <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_left</span>
+            <span>Back<span class="sr-only"> to previous menu</span></span> 
+          </button>
 
-                        <section id="fld-password" class="shs-field w3-section">
-                            <input class="w3-input" type="password" placeholder="Password" name="password" id="fld-password-fld" />
-                            <span class="bar"></span>
-                        </section>
-
-                        <section class="w3-section">
-                            <button type="button" onclick="validateLogin()" class="w3-button w3-block w3-blue">Log In</button>
-                        </section>
-                    </form>
-
-                    <section class="w3-section" id="shs-login-links">                    
-                        <p><a href="http://www.sydneyboyshigh.com/login-instructions">Can't access your account?</a></p>
-                        <p><a href="/parent/register">Register for Parent Portal</a></p>
-                    </section>
-                </div>
-            </div>
+          <button class="nsw-icon-button js-close-nav" type="button" aria-expanded="true">
+            <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">close</span>
+            <span class="sr-only">Close Menu</span>
+          </button>
         </div>
-    </div>
 
-    <!-- JavaScript for login validation -->
-    <script>
-        function validateLogin() {
-            // Get username and password inputs
-            const username = document.getElementById("fld-username-fld").value;
-            const password = document.getElementById("fld-password-fld").value;
+        <div class="nsw-main-nav__title">
+          <a href="https://designsystem.digital.nsw.gov.au/index.html#about-dpc">
+            <span>About DPC</span>
+            <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">east</span>
+          </a>
+        </div>
 
-            // Check if username and password are correct
-            if (username === "rafael.wang" && password === "sthsportal") {
-                // Redirect to login page if credentials are correct
-                window.location.href = "/login.html";
-            } else {
-                // Display error message if credentials are incorrect
-                document.getElementById("shs-login-message").innerHTML = `
-                    <div class="error-message">
-                        <p>Unable to log you in</p>
-                        <p>The username or password you have provided does not exist or is incorrect. </p>
-                    </div>
-                `;
-            }
-        }
-    </script>
+        <div class="nsw-main-nav__description">Filium morte multavit si sine causa? quae fuerit causa, nollem.</div>
+
+        <ul class="nsw-main-nav__sub-list">
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+              <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_right</span>
+            </a>
+            <div class="nsw-main-nav__sub-nav" id="sub-nav-1138" role="region" aria-label="Level 2 Submenu">
+              <div class="nsw-main-nav__header">
+                <button class="nsw-icon-button nsw-icon-button--flex js-close-sub-nav" type="button" aria-expanded="true" aria-controls="sub-nav-1138">
+                  <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_left</span>
+                  <span>Back<span class="sr-only"> to previous menu</span></span> 
+                </button>
+
+                <button class="nsw-icon-button js-close-nav" type="button" aria-expanded="true">
+                  <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">close</span>
+                  <span class="sr-only">Close Menu</span>
+                </button>
+              </div>
+
+              <div class="nsw-main-nav__title">
+                <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2"><span>Level 2</span></a>
+              </div>
+
+              <ul class="nsw-main-nav__sub-list">
+                <li>
+                  <a href="https://designsystem.digital.nsw.gov.au/index.html#level-3">
+                    <span>Level 3</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://designsystem.digital.nsw.gov.au/index.html#level-3">
+                    <span>Level 3</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://designsystem.digital.nsw.gov.au/index.html#level-3">
+                    <span>Level 3</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <a href="https://designsystem.digital.nsw.gov.au/index.html#updates">
+        <span>Updates</span>
+        <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_right</span>
+      </a>
+
+      <div class="nsw-main-nav__sub-nav" id="sub-nav-3250fbee" role="region" aria-label="Updates Submenu">
+        <div class="nsw-main-nav__header">
+          <button class="nsw-icon-button nsw-icon-button--flex js-close-sub-nav" type="button" aria-expanded="true" aria-controls="sub-nav-3250fbee">
+            <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_left</span>
+            <span>Back<span class="sr-only"> to previous menu</span></span> 
+          </button>
+
+          <button class="nsw-icon-button js-close-nav" type="button" aria-expanded="true">
+            <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">close</span>
+            <span class="sr-only">Close Menu</span>
+          </button>
+        </div>
+
+        <div class="nsw-main-nav__title">
+          <a href="https://designsystem.digital.nsw.gov.au/index.html#updates">
+            <span>Updates</span>
+            <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">east</span>
+          </a>
+        </div>
+
+        <div class="nsw-main-nav__description"></div>
+
+        <ul class="nsw-main-nav__sub-list">
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <a href="https://designsystem.digital.nsw.gov.au/index.html#publications">
+        <span>Publications</span>
+        <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_right</span>
+      </a>
+
+      <div class="nsw-main-nav__sub-nav" id="sub-nav-bd48c03b" role="region" aria-label="Publications Submenu">
+        <div class="nsw-main-nav__header">
+          <button class="nsw-icon-button nsw-icon-button--flex js-close-sub-nav" type="button" aria-expanded="true" aria-controls="sub-nav-bd48c03b">
+            <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_left</span>
+            <span>Back<span class="sr-only"> to previous menu</span></span> 
+          </button>
+
+          <button class="nsw-icon-button js-close-nav" type="button" aria-expanded="true">
+            <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">close</span>
+            <span class="sr-only">Close Menu</span>
+          </button>
+        </div>
+
+        <div class="nsw-main-nav__title">
+          <a href="https://designsystem.digital.nsw.gov.au/index.html#publications">
+            <span>Publications</span>
+            <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">east</span>
+          </a>
+        </div>
+
+        <div class="nsw-main-nav__description"></div>
+
+        <ul class="nsw-main-nav__sub-list">
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <a href="https://designsystem.digital.nsw.gov.au/index.html#tools-resources">
+        <span>Tools &amp; Resources</span>
+        <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_right</span>
+      </a>
+
+      <div class="nsw-main-nav__sub-nav" id="sub-nav-c457a536" role="region" aria-label="Tools &amp; Resources Submenu">
+        <div class="nsw-main-nav__header">
+          <button class="nsw-icon-button nsw-icon-button--flex js-close-sub-nav" type="button" aria-expanded="true" aria-controls="sub-nav-c457a536">
+            <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_left</span>
+            <span>Back<span class="sr-only"> to previous menu</span></span> 
+          </button>
+
+          <button class="nsw-icon-button js-close-nav" type="button" aria-expanded="true">
+            <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">close</span>
+            <span class="sr-only">Close Menu</span>
+          </button>
+        </div>
+
+        <div class="nsw-main-nav__title">
+          <a href="https://designsystem.digital.nsw.gov.au/index.html#tools-resources">
+            <span>Tools &amp; Resources</span>
+            <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">east</span>
+          </a>
+        </div>
+
+        <div class="nsw-main-nav__description"></div>
+
+        <ul class="nsw-main-nav__sub-list">
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.digital.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <a href="https://designsystem.digital.nsw.gov.au/index.html#contact-us">
+        <span>Contact us</span>
+      </a>    </li>
+  </ul>
+</nav>
+
+  <script src="https://designsystem.digital.nsw.gov.au/js/main.js"></script>
+  <script>
+    window.NSW.initSite()
+  </script>
 </body>
 </html>

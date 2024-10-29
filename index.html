@@ -50,8 +50,47 @@
     <a href="#"><span>Skip to content</span></a>
   </nav>
   <div class="nsw-masthead">
-    <div class="nsw-container">Sydney Technical High School - Interact</div>
+    <div class="nsw-container" style="display: flex; justify-content: flex-end; align-items: center;">
+      <span style="margin-right: auto;">Sydney Technical High School - Interact</span>
+  
+      <!-- Dropdown menu structure -->
+      <div style="position: relative; display: inline-block;">
+        <button id="dropdownButton" style="background-color: #4b2f3b; color: white; padding: 8px 8px font-size: 8pxpx; border: none; cursor: pointer;">
+          Quick Links ▼
+        </button>
+  
+        <!-- Dropdown content -->
+        <div id="dropdownContent" style="display: none; position: absolute; right: 0; margin-top: 8px; background-color: white; min-width: 160px; border: 1px solid #ddd; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); z-index: 1;">
+          <a href="#" style="color: black; padding: 10px 16px; text-decoration: none; display: block;">Interact Home Page</a>
+          <a href="/edit-site/login/index.html" style="color: black; padding: 10px 16px; text-decoration: none; display: block;">Edit this Site</a>
+        </div>
+      </div>
+    </div>
   </div>
+  
+  <script>
+    // Toggle the dropdown menu
+    document.getElementById('dropdownButton').onclick = function() {
+      var dropdownContent = document.getElementById('dropdownContent');
+      if (dropdownContent.style.display === 'none' || dropdownContent.style.display === '') {
+        dropdownContent.style.display = 'block';
+      } else {
+        dropdownContent.style.display = 'none';
+      }
+    };
+  
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('#dropdownButton')) {
+        var dropdowns = document.getElementById('dropdownContent');
+        if (dropdowns.style.display === 'block') {
+          dropdowns.style.display = 'none';
+        }
+      }
+    };
+  </script>
+  
+   
 <header class="nsw-header">
   <div class="nsw-header__container">
     <div class="nsw-header__inner">
@@ -67,6 +106,37 @@
         </div>
         <div class="nsw-header__name">
           <div class="nsw-header__title">Interact</div>
+          <style>
+            .nsw-header__title {
+              font-size: 40px; /* Adjust the size as needed */
+              font-weight: bold; /* Optional: makes the text bold */
+            }
+          </style>
+          <p class="local-header-message">Manners Makyth Man</p>
+          <style>
+            .local-header-message {
+              font-size: 20px; /* Adjust the size as needed */
+              font-weight: normal; /* Optional: makes the text bold */
+            }
+          </style>
+          <div class="local-header-contact">
+            <p class="local-header-contact-info-phone">
+              <span aria-hidden="true"></span><span class="show-on-sr"><strong>Telephone:</strong></span>02 8566 2600
+              <style>
+                .local-header-contact-info-phone {
+                  font-size: 15px; /* Adjust the size as needed */
+                  font-weight: bold; /* Optional: makes the text bold */
+                }
+              </style>
+            <p class="local-header-contact-info">
+              <span aria-hidden="true"></span><span class="show-on-sr"><strong>Email:</strong></span><a href="mailto:sydneytech-h.school@det.nsw.edu.au"> sydneytech-h.school@det.nsw.edu.au</a>
+              <style>
+                .local-header-contact-info {
+                  font-size: 15px; /* Adjust the size as needed */
+                  font-weight: bold; /* Optional: makes the text bold */
+                }
+              </style>
+          </div>
         </div>
       </div>
       <div class="nsw-header__menu">
@@ -484,4 +554,19 @@
     window.NSW.initSite()
   </script>
 </body>
+
+<div class="nsw-hero-banner nsw-hero-banner--light nsw-hero-banner--wide">
+  <div class="nsw-hero-banner__container">
+    <div class="nsw-hero-banner__wrapper">
+      <div class="nsw-hero-banner__content">
+        <h1>Helping you deliver great government services</h1>
+        <p class="nsw-intro">Find the building blocks for creating user-centred digital services, as well as policy, tools and guidance</p>
+        <div class="nsw-hero-banner__button"><a href="#" class="nsw-button nsw-button--dark">View Digital Service Toolkit</a></div>
+      </div>
+      <div class="nsw-hero-banner__box">
+      </div>
+    </div>
+  </div>
+</div>
+
 </html>
