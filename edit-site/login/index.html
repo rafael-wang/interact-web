@@ -75,7 +75,7 @@
 
                 <!-- login content -->
                 <div class="w3-container">
-                    <p id="shs-login-instruction">Log In with your authorised account. &mdash;</p>
+                    <p id="shs-login-instruction">Log In using the Access Code provided &mdash;</p>
                     <div id="shs-login-message"></div> <!-- Error message will appear here -->
 
                     <!-- Login form -->
@@ -103,11 +103,10 @@
     <script>
         function validateLogin() {
             // Get username and password inputs
-            const username = document.getElementById("fld-username-fld").value;
             const password = document.getElementById("fld-password-fld").value;
 
             // Check if username and password are correct
-            if (username === "rafael.wang" && password === "sthsportal") {
+            if (password === "sthsportal") {
                 // Redirect to login page if credentials are correct
                 window.location.href = "/login.html";
             } else {
@@ -115,7 +114,7 @@
                 document.getElementById("shs-login-message").innerHTML = `
                     <div class="error-message">
                         <p>Unable to log you in</p>
-                        <p>The username or password you have inputted either doesn't exist or does not have authorised priveledges.</p>
+                        <p>The password you have inputted either doesn't exist or is incorrect.</p>
                     </div>
                 `;
             }
