@@ -41,6 +41,21 @@
   </script>
 </head>
 
+<div class="nsw-global-alert nsw-global-alert--light js-global-alert" role="alert" data-cookie-name="">
+  <div class="nsw-global-alert__wrapper">
+    <div class="nsw-global-alert__content">
+      <div class="nsw-global-alert__title">Missing Daily Notices</div>
+      <p>Our club's Daily Notices have been tampered with over the past few terms. If you have been left confused as to when we have meetings, they are usually in the Common Room and Drama Room. </p>
+    </div>
+    <p><a href="/site-pages/missing-daily-notices/index.html" class="nsw-button nsw-button--info">More information</a></p>
+    <button class="nsw-icon-button js-close-alert" type="button" aria-expanded="true">
+      <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">close</span>
+      <span class="sr-only">Close message</span>
+    </button>
+  </div>
+</div>
+
+
 <body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P2NKBBJZ"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
@@ -50,39 +65,94 @@
     <a href="#"><span>Skip to content</span></a>
   </nav>
   <div class="nsw-masthead">
-    <div class="nsw-container">Sydney Technical High School - Interact</div>
+    <div class="nsw-container" style="display: flex; justify-content: flex-end; align-items: center;">
+      <span style="margin-right: auto;">Sydney Technical High School - Interact</span>
+  
+      <!-- Dropdown menu structure -->
+      <div style="position: relative; display: inline-block;">
+        <button id="dropdownButton" style="background-color: #4b2f3b; color: white; padding: 8px 8px font-size: 8pxpx; border: none; cursor: pointer;">
+          Quick Links ▼
+        </button>
+  
+        <!-- Dropdown content -->
+        <div id="dropdownContent" style="display: none; position: absolute; right: 0; margin-top: 8px; background-color: white; min-width: 160px; border: 1px solid #ddd; box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); z-index: 1;">
+          <a href="#" style="color: black; padding: 10px 16px; text-decoration: none; display: block;">Interact Home Page</a>
+          <a href="/edit-site/login/index.html" style="color: black; padding: 10px 16px; text-decoration: none; display: block;">Edit this Site</a>
+        </div>
+      </div>
+    </div>
   </div>
+  
+  <script>
+    // Toggle the dropdown menu
+    document.getElementById('dropdownButton').onclick = function() {
+      var dropdownContent = document.getElementById('dropdownContent');
+      if (dropdownContent.style.display === 'none' || dropdownContent.style.display === '') {
+        dropdownContent.style.display = 'block';
+      } else {
+        dropdownContent.style.display = 'none';
+      }
+    };
+  
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('#dropdownButton')) {
+        var dropdowns = document.getElementById('dropdownContent');
+        if (dropdowns.style.display === 'block') {
+          dropdowns.style.display = 'none';
+        }
+      }
+    };
+  </script>
+  
+   
 <header class="nsw-header">
   <div class="nsw-header__container">
     <div class="nsw-header__inner">
       <div class="nsw-header__main">
         <div class="nsw-header__waratah">
           <a href="https://designsystem.digital.nsw.gov.au/">
-            <a href="https://sydneytech-h.schools.nsw.gov.au/">
+            <a href="/index.html">
                 <img src="https://sydneytech-h.schools.nsw.gov.au/content/dam/doe/sws/schools/s/sydneytech-h/image/images/sths-logo.png" 
                      alt="NSW Government" class="nsw-header__logo" style="width: 130px; height: auto;">
               </a>
             <span class="sr-only">Sydney Technical High School - Interact</span>
           </a>
-<!-- Component - Local Header fragment starts here-->
-<header class="local-header uk-hidden-small">
-    <div class="uk-width-xlarge-1-1">
-      <div class="uk-container uk-container-center">
-  
-        <div class="local-header-name uk-width-8-10">
-          <h1 class="local-header-heading">Sydney Technical High School</h1> <p          
+        </div>
+        <div class="nsw-header__name">
+          <div class="nsw-header__title">Interact</div>
+          <style>
+            .nsw-header__title {
+              font-size: 40px; /* Adjust the size as needed */
+              font-weight: bold; /* Optional: makes the text bold */
+            }
+          </style>
+          <p class="local-header-message">Manners Makyth Man</p>
+          <style>
+            .local-header-message {
+              font-size: 20px; /* Adjust the size as needed */
+              font-weight: normal; /* Optional: makes the text bold */
+            }
+          </style>
           <div class="local-header-contact">
             <p class="local-header-contact-info-phone">
-              <span aria-hidden="true"></span><span class="show-on-sr"><strong>Telephone - </strong></span>02 8566 2600
+              <span aria-hidden="true"></span><span class="show-on-sr"><strong>Telephone:</strong></span>02 8566 2600
+              <style>
+                .local-header-contact-info-phone {
+                  font-size: 15px; /* Adjust the size as needed */
+                  font-weight: bold; /* Optional: makes the text bold */
+                }
+              </style>
             <p class="local-header-contact-info">
-              <span aria-hidden="true"></span><span class="show-on-sr"><strong>Email - </strong></span><a href="mailto:sydneytech-h.school@det.nsw.edu.au"> sydneytech-h.school@det.nsw.edu.au
+              <span aria-hidden="true"></span><span class="show-on-sr"><strong>Email:</strong></span><a href="mailto:sydneytech-h.school@det.nsw.edu.au"> sydneytech-h.school@det.nsw.edu.au</a>
+              <style>
+                .local-header-contact-info {
+                  font-size: 15px; /* Adjust the size as needed */
+                  font-weight: bold; /* Optional: makes the text bold */
+                }
+              </style>
           </div>
-          
         </div>
-      </div>
-    </div>
-  </header>
-  <!-- Component - Local Header fragment ends here-->
       </div>
       <div class="nsw-header__menu">
         <button type="button" class="js-open-nav" aria-expanded="false" aria-controls="main-nav">
@@ -90,12 +160,28 @@
           <span><span class="sr-only">Open</span> Menu</span>
         </button>
       </div>
-
+      <div class="nsw-header__search">
+        <button type="button" class="js-open-search" aria-expanded="false" aria-controls="header-search">
+          <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">search</span>
+          <span><span class="sr-only">Show</span> Search</span>
         </button>
       </div>
     </div>
 
-
+    <div class="nsw-header__search-area js-search-area" id="header-search" hidden>
+      <form role="search">
+        <label for="nsw-header-input" class="sr-only">Search site for:</label>
+        <input class="nsw-header__input js-search-input" type="text" autocomplete="off" id="nsw-header-input" name="nsw-header-input">
+        <button class="nsw-icon-button nsw-icon-button--flex" type="submit" aria-controls="header-search">
+          <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">search</span>
+          <span class="sr-only">Search</span>
+        </button>
+      </form>
+      <button class="nsw-icon-button js-close-search" aria-expanded="true" aria-controls="header-search">
+        <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">close</span>
+        <span class="sr-only">Close search</span>
+      </button>
+    </div>
   </div>
 </header>
 <nav class="nsw-main-nav js-mega-menu" id="main-nav" aria-label="Main menu">
@@ -109,12 +195,12 @@
   <ul class="nsw-main-nav__list">
     <li>
       <a href="https://designsystem.digital.nsw.gov.au/index.html#about-dpc">
-        <span>About DPC</span>
+        <span>About Interact</span>
         <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_right</span>
       </a>
 
       <div class="nsw-main-nav__sub-nav" id="sub-nav-914d7e2" role="region" aria-label="About DPC Submenu">
-        <div class="nsw-main-nav__header">
+        <div class="nsw-main-nav__header"
           <button class="nsw-icon-button nsw-icon-button--flex js-close-sub-nav" type="button" aria-expanded="true" aria-controls="sub-nav-914d7e2">
             <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_left</span>
             <span>Back<span class="sr-only"> to previous menu</span></span> 
@@ -262,11 +348,11 @@
     </li>
     <li>
       <a href="https://designsystem.digital.nsw.gov.au/index.html#updates">
-        <span>Updates</span>
+        <span>Notices</span>
         <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_right</span>
       </a>
 
-      <div class="nsw-main-nav__sub-nav" id="sub-nav-3250fbee" role="region" aria-label="Updates Submenu">
+      <div class="nsw-main-nav__sub-nav" id="sub-nav-3250fbee" role="region" aria-label="Notices Submenu">
         <div class="nsw-main-nav__header">
           <button class="nsw-icon-button nsw-icon-button--flex js-close-sub-nav" type="button" aria-expanded="true" aria-controls="sub-nav-3250fbee">
             <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_left</span>
@@ -319,7 +405,7 @@
     </li>
     <li>
       <a href="https://designsystem.digital.nsw.gov.au/index.html#publications">
-        <span>Publications</span>
+        <span>Writing Committee Publications</span>
         <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_right</span>
       </a>
 
@@ -472,7 +558,7 @@
       </div>
     </li>
     <li>
-      <a href="https://designsystem.digital.nsw.gov.au/index.html#contact-us">
+      <a href="/site-pages/contact-us/index.html">
         <span>Contact us</span>
       </a>    </li>
   </ul>
@@ -483,4 +569,19 @@
     window.NSW.initSite()
   </script>
 </body>
+
+<div class="nsw-hero-banner nsw-hero-banner--light nsw-hero-banner--wide">
+  <div class="nsw-hero-banner__container">
+    <div class="nsw-hero-banner__wrapper">
+      <div class="nsw-hero-banner__content">
+        <h1>Helping you deliver great government services</h1>
+        <p class="nsw-intro">Find the building blocks for creating user-centred digital services, as well as policy, tools and guidance</p>
+        <div class="nsw-hero-banner__button"><a href="#" class="nsw-button nsw-button--dark">View Digital Service Toolkit</a></div>
+      </div>
+      <div class="nsw-hero-banner__box">
+      </div>
+    </div>
+  </div>
+</div>
+
 </html>
