@@ -32,6 +32,6 @@
     // Check if the current path exists in the list of normalized paths
     if (!normalizedPaths.includes(path)) {
         // Redirect to the 404 page if the path is not valid
-        window.location.href = "/404/index.html";
+        window.location.href = "/404";
     }
 })();
