@@ -9,17 +9,17 @@
     <!-- Include Lato font from Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/w3.css" />
-    <link rel="stylesheet" href="/sths-fonts.css" />    
-    <link rel="stylesheet" href="/sths-fa.css" />
-    <link rel="stylesheet" href="/sths-login.css" />
+    <link rel="stylesheet" href="/assets/w3.css" />
+    <link rel="stylesheet" href="/assets/sths-font.css" />    
+    <link rel="stylesheet" href="/assets/sths-fa.css" />
+    <link rel="stylesheet" href="/assets/sths-login.css" />
 
     <!-- Custom CSS for styling -->
     <style>
         /* Apply Lato font to the body and other elements */
         body {
             font-family: 'Lato', sans-serif; /* Set Lato font for body */
-            background-image: url('/login_background.jpg'); /* Set background image */
+            background-image: url('/assets/login_background.jpg'); /* Set background image */
             background-size: cover; /* Cover the entire screen */
             background-position: center; /* Center the image */
             background-repeat: no-repeat; /* Prevent image from repeating */
@@ -70,55 +70,24 @@
             <div class="w3-card-4">
                 <!-- login header -->
                 <header class="w3-container">
-                    <h2 id="shs-login-title">Edit This Site</h2>              
+                    <h2 id="shs-login-title">Edit Site - Authorised Users</h2>              
                 </header>
 
                 <!-- login content -->
                 <div class="w3-container">
-                    <p id="shs-login-instruction">Log In using the Access Code provided &mdash;</p>
-                    <div id="shs-login-message"></div> <!-- Error message will appear here -->
 
-                    <!-- Login form -->
-                    <form id="shs-login-form">
+                    <p>Access to edit site has not been yet disclosed due to the complexity of embedding VS Code into html. </p> <p>Unless an easy way is discovered, editting site remains as a dead end.</p>
 
-                        <section id="fld-password" class="shs-field w3-section">
-                            <input class="w3-input" type="password" placeholder="Access Code" name="password" id="fld-password-fld" />
-                            <span class="bar"></span>
-                        </section>
 
                         <section class="w3-section">
-                            <button type="button" onclick="validateLogin()" class="w3-button w3-block w3-blue">Log In</button>
+                            <button type="button" onclick="window.location.href='/index.html'" class="w3-button w3-block w3-blue"> << Back to Website </button>
                         </section>
-                    </form>
-
-                    <section class="w3-section" id="shs-login-links">                    
-                        <p><a href="/login-instructions/edit-site/index.html">Can't access edit panel?</a></p>
                     </section>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- JavaScript for login validation -->
-    <script>
-        function validateLogin() {
-            // Get username and password inputs
-            const password = document.getElementById("fld-password-fld").value;
 
-            // Check if username and password are correct
-            if (password === "sthsportal") {
-                // Redirect to login page if credentials are correct
-                window.location.href = "/login.html";
-            } else {
-                // Display error message if credentials are incorrect
-                document.getElementById("shs-login-message").innerHTML = `
-                    <div class="error-message">
-                        <p>Unable to log you in</p>
-                        <p>The password you have inputted either doesn't exist or is incorrect.</p>
-                    </div>
-                `;
-            }
-        }
-    </script>
 </body>
 </html>
