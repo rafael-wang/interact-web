@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <title>tech.net - Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Include Lato font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/w3.css" />
+    <link rel="stylesheet" href="/assets/sths-font.css" />    
+    <link rel="stylesheet" href="/assets/sths-fa.css" />
+    <link rel="stylesheet" href="/assets/sths-login.css" />
+
+    <!-- Custom CSS for styling -->
+    <style>
+        /* Apply Lato font to the body and other elements */
+        body {
+            font-family: 'Lato', sans-serif; /* Set Lato font for body */
+            background-image: url('/login_background.jpg'); /* Set background image */
+            background-size: cover; /* Cover the entire screen */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Prevent image from repeating */
+            height: 100vh; /* Ensure body covers the full height of the viewport */
+            margin: 0; /* Remove default margin */
+        }
+
+        #shs-login-title {
+            font-family: 'Lato', sans-serif; /* Set Lato font for Portal Log In title */
+            font-weight: 900; /* Set to Lato bold weight */
+        }
+
+        .error-message {
+            background-color: #e74c3c; /* Red background */
+            color: white; /* White text */
+            padding: 16px;
+            border-radius: 5px;
+            font-weight: normal;
+            margin-top: 10px;
+        }
+        .error-message p {
+            margin: 0;
+            font-size: 1rem;
+        }
+        .error-message p:first-child {
+            font-size: 1.45rem;
+            font-weight: 900; /* Use Lato bold for this line */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- header -->
+    <div class="w3-top" id="shs-foot">
+        <div class="w3-row w3-black">
+            <div class="w3-buttons">
+                
+            </div>
+            <div class="shs-logo-foot">
+                <p class="shs-foot-text">tech.interact</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- login container -->
+    <div id="shs-login-container">
+        <div class="w3-container" id="shs-login">
+            <div class="w3-card-4">
+                <!-- login header -->
+                <header class="w3-container">
+                    <h2 id="shs-login-title">404</h2>              
+                </header>
+
+                <!-- login content -->
+                <div class="w3-container">
+
+                    <p>This area of this website does not exist.</p> <p>Click the button below to be redirected to the home screen.</p>
+
+
+                        <section class="w3-section">
+                            <button type="button" onclick="window.location.href='/index.html'" class="w3-button w3-block w3-blue"> << Back to Login </button>
+                        </section>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for login validation -->
+    <script>
+        function validateLogin() {
+            // Get username and password inputs
+            const username = document.getElementById("fld-username-fld").value;
+            const password = document.getElementById("fld-password-fld").value;
+
+            // Check if username and password are correct
+            if (username === "rafael.wang" && password === "sthsportal") {
+                // Redirect to login page if credentials are correct
+                window.location.href = "/edit-site/login/index.html";
+            } else {
+                // Display error message if credentials are incorrect
+                document.getElementById("shs-login-message").innerHTML = `
+                    <div class="error-message">
+                        <p>Unable to register your account.</p>
+                        <p>THe field you have provied is either empty or has already been registered.</p>
+                    </div>
+                `;
+            }
+        }
+    </script>
+</body>
+</html>
