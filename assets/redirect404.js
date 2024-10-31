@@ -24,6 +24,9 @@
         "/site-pages/file-management",
         "/site-pages/missing-daily-notices",
         "/index.html",
+        "/edit-site/edit/index.html",
+        "/edit-site/index.html",
+        "/interact-file-management/index.html",
     ];
 
     // Convert validPaths to ensure consistency with path
